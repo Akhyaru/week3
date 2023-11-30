@@ -54,6 +54,8 @@ const handleLogin = async () => {
     icon: 'success',
     confirmButtonText: 'Cool'
   })
+  auth.login(username.value)
+  router.push('/')
   }
 
   if (response.data.status === "error, username not found") {
